@@ -1,0 +1,30 @@
+ {% load static %}
+
+<html lang="en">
+<head>
+    <!-- Head content... -->
+</head>
+<style>
+
+        body {
+            background-color: #27ae60;
+        }
+
+        .stl {
+            text-align: center;
+            color: red;
+        }
+</style>
+<body>
+    {% for x in products %}
+        <div class="stl">
+            <h2>{{ x.name }}</h2>
+            <h2>{{ x.weight }}</h2>
+            <h2>{{ x.price }}</h2>
+            <h2>{{ x.term }}</h2>
+            <h2>{{ x.compoud }}</h2>
+            <img src="{{ x.image.url }}" alt="" />
+        </div>
+    {% endfor %}
+</body>
+</html>
