@@ -1,0 +1,20 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <!-- Head content... -->
+</head>
+<style>
+
+</style>
+<body>
+    {% for employee in employees %}
+        <div class="stl">
+            <h2>{{ employee.name }}</h2>
+            <h2>{{ employee.position }}</h2>
+            <h2>{{ employee.salary }}</h2>
+
+        </div>
+    {% endfor %}
+</body>
+</html>
